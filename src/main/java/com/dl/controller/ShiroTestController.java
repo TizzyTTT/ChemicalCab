@@ -28,7 +28,7 @@ public class ShiroTestController {
             return "请输入用户名和密码";
         }
 //  单位信息 用户信息  2->1 （单位获得唯一编码,排列组合,,,,）
-//  用户认证信息
+//   用户认证信息
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(user.getUserName(),user.getPassWord());
         try{
